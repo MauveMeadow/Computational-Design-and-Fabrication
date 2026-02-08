@@ -1,6 +1,6 @@
 # Parasol: Deployable Origami Structure
 
-**Course:** Computational Design and Fabrication 1 **Institution:** Technical University of Munich (TUM), School of Engineering and Design **Semester:** Winter Semester 2025/26 **Team (Group 8):** Mays Alsheikh, Milena Pospischil, Christian Rauch **Date:** Munich, 5 February 2026 
+**Course:** Computational Design and Fabrication 1 **Institution:** Technical University of Munich (TUM), School of Engineering and Design **Semester:** Winter Semester 2025/26 **Team:** Mays Alsheikh, Milena Pospischil, Christian Rauch **Date:** Munich, 5 February 2026 
 
 ---
 
