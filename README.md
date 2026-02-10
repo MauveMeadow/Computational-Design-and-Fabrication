@@ -16,18 +16,11 @@ To support rapid assembly, our structure must achieve quick deployment and effic
 
 ### Key Constraints & Goals
 
-* 
 **Context:** Limited space with high pedestrian traffic.
 
-
-* 
 **Logistics:** Must be easy to store and transport.
 
-
-* 
 **Fabrication:** Designed for simple off-site production using flat sheet materials.
-
-
 
 ---
 
@@ -38,17 +31,12 @@ The geometry is generated parametrically to ensure the surface is developable (c
 ### Software Stack
 
 * **Rhino 7 / 8** (Geometry Engine)
-* 
+
 **Grasshopper** (Visual Scripting) 
 
-
-* 
 **Python (GHPython)** (Topology & Grid Generation) 
 
-
-* 
 **CRANE** (Origami Physics Solver by Kai Suto) 
-
 
 
 ### The Algorithm
@@ -61,23 +49,14 @@ To ensure successful simulation in CRANE, the mesh topology follows specific rul
 
 1. **Continuous Valleys:** The Blue Radial Valleys run continuously from the center to the edge.
 2. **Continuous Spines:** The Green Diamond Spines connect the Inner Tip directly to the Outer Tip, skipping intermediate vertices to prevent edge-splitting during simulation.
-3. 
-**Strict Triangulation:** The mesh is explicitly triangulated to define rigid plates.
-
-
+3. **Strict Triangulation:** The mesh is explicitly triangulated to define rigid plates.
 
 #### Grasshopper Workflow
 
 The data flow visualized in the definition is as follows:
 
-1. 
-**Python Script:** Generates the raw vertices, faces, and classified lines (Mountain/Valley).
-
-
-2. 
-**Boundary & Surface Split:** The script outputs curves used to split a base surface into individual rigid faces.
-
-
+1. **Python Script:** Generates the raw vertices, faces, and classified lines (Mountain/Valley).
+2. **Boundary & Surface Split:** The script outputs curves used to split a base surface into individual rigid faces.
 3. **Mesh Conversion:** The surfaces are joined and converted into a mesh (`SMesh`  `Weld`).
 4. **CRANE Solver:** The mesh and fold lines are fed into the `CMesh` component. The solver simulates the folding motion based on a `FoldSpeed` parameter (set to 0.14 in the reference).
 
@@ -98,19 +77,12 @@ The following Python script is used inside the GHPython component to generate th
 
 ## 4. Fabrication & Materiality
 
-* 
 **Material:** Perforated metal plates with fabric hinges.
 
-
-* 
 **Joints:** Detachable joints utilizing Keder Tracks (econotarps) for segmentation.
 
-
-* 
 **Mechanism:** Central radial actuation (pulling mechanism) designed to expand the triangulated mesh.
 
-
-* 
 **Scalability:** The design is scalable and allows for modular prefabrication.
 
 
@@ -119,13 +91,8 @@ The following Python script is used inside the GHPython component to generate th
 
 ## 5. References
 
-* 
 *Folding patterns for developable surfaces* (D'Acunto, 2018).
 
-
-* 
 *Santo António Da Polana Church* (Nuno Craveiro Lopes).
 
-
-* 
 *Deployable Umbrella* (Tongji University, Southeast University).
