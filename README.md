@@ -30,7 +30,7 @@ The geometry is generated parametrically to ensure the surface is developable (c
 
 ### Software Stack
 
-* **Rhino 7 / 8** (Geometry Engine)
+**Rhino 7 / 8** (Geometry Engine)
 
 **Grasshopper** (Visual Scripting) 
 
